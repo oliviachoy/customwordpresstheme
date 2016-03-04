@@ -16,7 +16,7 @@
 <header>
   <div class="container">
 
-    <img src="  <?php bloginfo('template_directory')?>/images/logo2.png" alt="">
+    <img src="<?php bloginfo('template_directory')?>/images/logo2.png" alt="">
 
     <?php wp_nav_menu( array(
       'theme_location' => 'primary'

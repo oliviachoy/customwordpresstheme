@@ -1,6 +1,15 @@
 <footer>
   <div class="container">
-    <p>&copy; Olivia Choy <?php echo date('Y'); ?></p>
+    
+    <p>Designed and Developed by Olivia Choy <?php echo date('Y'); ?></p>
+
+    <img src="<?php bloginfo('template_directory')?>/images/logo2.png" alt="">
+
+    <div class="socialMedia">
+    	<?php  wp_nav_menu(array(
+    	'theme_location' => 'social'
+    	)); ?>
+    </div>
   </div>
 </footer>
 

@@ -1,0 +1,10 @@
+.gallery ul {
+	display: flex;
+	li {
+		width: 20%;
+		padding: 0;
+	}
+	img {
+		max-width: 100%;
+	}
+}
