@@ -1,0 +1,19 @@
+.content2 {
+	display: flex;
+}
+
+.blogContent {
+	margin-top: 15rem;
+	text-align: left;
+	.entry-content {
+		display: flex;
+		align-items: center;
+		img {
+			width: 30%;
+		}
+		p {
+			padding-left: 2rem;
+		}
+	}
+}
+

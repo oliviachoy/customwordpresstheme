@@ -127,7 +127,7 @@ add_filter( 'wp_page_menu_args', 'hackeryou_page_menu_args' );
  * Sets the post excerpt length to 40 characters.
  */
 function hackeryou_excerpt_length( $length ) {
-	return 40;
+	return 100 ;
 }
 add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
 
@@ -276,4 +276,11 @@ function get_post_parent($post) {
 	else {
 		return $post->ID;
 	}
+}
+
+// hackeryou get thumbnail url: returne current post thumbnail URL  //
+function hackeryou_get_thumbnail_url($post) {
+	$imageID = get_post_thumbnail_id($post->ID);
+	$imageURL = wp_get_attachment_url($imageID);
+	return $imageURL;
 }
