@@ -22,7 +22,7 @@
          	 <?php the_title(); ?>
         	</a>
      	 </h2>
-     	 <h3> Posted On <?php the_date('F j,Y'); ?> by <?php the_author();?></h3>
+     	 <h3> Posted On <?php the_date('F j, Y'); ?> by <?php the_author();?></h3>
 
 			<section class="entry-content">
 				<img src="<?php echo hackeryou_get_thumbnail_url($post) ?>" alt="">
@@ -32,10 +32,6 @@
           'after' => '</div>'
         )); ?>
 			</section><!-- .entry-content -->
-
-			<footer>
-        		<p><?php comments_popup_link('Respond to this post &raquo;', '1 Response &raquo;', '% Responses &raquo;'); ?></p>
-			</footer>
 
 		</article><!-- #post-## -->
 

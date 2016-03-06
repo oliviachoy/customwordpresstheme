@@ -3,17 +3,26 @@
 <div class="main">
   <div class="container">
 
-    <div class="content">
+    <div class="content  contactContent">
+      <div class="address">
       <?php // Start the loop ?>
-      <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-        <h2><?php the_title(); ?></h2>
-        <?php the_content(); ?>
+        <form>
+          <h2><?php the_title(); ?></h2>
+          <input type="text" placeholder="name">
+          <input type="email" placeholder="email">
+          <textarea name="id=" placeholder="message"></textarea>
+          <input type="submit"  value="Send">
+        </form>
+        
+        <div class="contactAddress">
+          <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+          <?php the_content(); ?>
 
-      <?php endwhile; // end the loop?>
+          <?php endwhile; // end the loop?>
+        </div>
+      </div>
     </div> <!-- /,content -->
-
-    <?php get_sidebar(); ?>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

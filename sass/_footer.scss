@@ -7,11 +7,15 @@ footer {
 		justify-content: space-between;
 		padding: 20px 0;
 		p {
-			font-size: 14px;
+			font-size: 1.1rem;
 			color:  $purple;
+			text-transform: uppercase;
+			letter-spacing: .1rem;
 		}
 		img {
 			width: 5%;
+			position: relative;
+			right: 5.5%;
 		}
 	.socialMedia li {
 

@@ -5,7 +5,7 @@
   <div class="container">
 
     <div class="content content2">
-    	<div class="blogContent">
+    	<div class="blogContent" id="blog">
     		<?php get_template_part( 'loop', 'index' );	?>
     	</div>
 	    <div class="blogSidebar">

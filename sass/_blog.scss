@@ -3,8 +3,11 @@
 }
 
 .blogContent {
-	margin-top: 15rem;
+	margin-top: 5rem;
 	text-align: left;
+	h3 {
+		padding: 2rem 0;
+	}
 	.entry-content {
 		display: flex;
 		align-items: center;
@@ -12,8 +15,21 @@
 			width: 30%;
 		}
 		p {
-			padding-left: 2rem;
+			width: 60%;
 		}
 	}
 }
 
+article {
+	border-bottom: 1px solid black;
+	padding-bottom: 4rem;
+	h2 {
+		margin: 4rem 0 0 0;
+		a {
+			text-transform: uppercase;
+			&:hover {
+				color: grey;
+				
+			}
+	}	}
+}

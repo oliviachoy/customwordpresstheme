@@ -1,5 +1,9 @@
 $(function(){
 
-	console.log("It's working");
+	$('#menu-item-46 a').on('click', function (){
+		$('html, body').animate ({
+			scrollTop: $("#about").offset().top
+		})
+	});
 
 });

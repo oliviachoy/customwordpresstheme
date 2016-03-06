@@ -6,17 +6,21 @@
 * Author: HackerYou
 * Author URI: http://hackeryou.com
 */
-$purple: #590059;
+$purple: #7F006E;
+$titleFont: 'Oswald', sans-serif;
+$bodyFont: 'Quicksand', sans-serif;
 
 @import 'normalize';
 @import 'typography';
 @import 'navigation';
-@import 'sidebar';
 @import 'comments';
+@import 'sidebar';
 @import 'header';
-@import 'front-page';
 @import 'blog';
+@import 'singleblog';
+@import 'front-page';
 @import 'gallery';
+@import 'contact';
 @import 'footer';
 /*
 ====================================
@@ -34,7 +38,14 @@ img {
 
 body {
 	color: #333;
+	font-family: $titleFont;
+	font-weight: 300;
 }
+ 
+p {
+ 	font-family: $bodyFont;
+ 	font-weight: 300;
+ }
 
 ul {
 	padding: 0;
@@ -49,5 +60,18 @@ ul {
 
 .full {
 	width: 100%;
+}
+
+h1, h2, h3, h4{
+	color: $purple;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+}
+
+a {
+	color: $purple;
+	&:hover {
+		color: #606060;
+	}
 }
 

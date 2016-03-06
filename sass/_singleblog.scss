@@ -1,0 +1,39 @@
+.blogmain {
+	.container {
+		margin-top: 13rem;
+		.content {
+			text-align: left;
+			display: flex;
+			padding-top: 5rem;
+			p {
+				width: 90%;
+			}
+			.entry-title {
+				font-size: 4rem;
+				text-align: center;
+			}
+			.entry-meta {
+				font-size: 1.8rem;
+				margin: 3rem 0;
+				text-align: center;
+			}
+		}
+	}
+}
+
+#comment {
+	border: 1px solid grey;
+}
+
+.sideBar2 {
+	margin-top: 7rem;
+}
+
+
+// .entry-content {
+// 	// display: flex;
+// 	// flex-direction: column;
+// 	p {
+		
+// 	}
+// }

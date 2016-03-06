@@ -47,6 +47,11 @@ function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
 
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+	wp_enqueue_style('goolgefont', 'https://fonts.googleapis.com/css?family=Oswald:400,300');
+
+	wp_enqueue_style('goolgefont1', 'https://fonts.googleapis.com/css?family=Quicksand');
+	
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
@@ -135,7 +140,7 @@ add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
  * Returns a "Continue Reading" link for excerpts
  */
 function hackeryou_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">Continue reading <span class="meta-nav">&rarr;</span></a>';
+	return ' <a href="'. get_permalink() . '">Read more <span class="meta-nav">&rarr;</span></a>';
 }
 
 /**
