@@ -23,6 +23,12 @@
 				width: inherit;
 				height: 43vh;
 			}
+			@media (max-width: 480px) {
+				height: 55vh;
+			}
+			@media (max-width: 380px) {
+				height: 40vh;
+			}
 			.logo {
 				margin-top: 11rem;
 				 h1 {
@@ -44,7 +50,7 @@
 					}
 				}
 				@media (max-width: 480px) {
-					margin-top: 5rem;
+					margin-top: 13rem;
 				}
 				@media (max-width: 380px){
 					margin-top: 8rem;
