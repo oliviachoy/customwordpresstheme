@@ -233,3 +233,10 @@ p.form-allowed-tags, .nocomments {
 .logged-in-as {
 	padding: 2rem 0;
 }
+
+#comments {
+	@media (max-width: 786px) {
+		width: 80%;
+		margin: 0 auto;
+	}
+}

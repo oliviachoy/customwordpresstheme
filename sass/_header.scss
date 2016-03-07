@@ -6,17 +6,26 @@ header {
 	right: 0;
 	background-color: #fff;
 	z-index: 999;
+	@media(max-width: 380px) {
+		padding-top: 6rem;
+	}
 	img {
 		position: absolute;
 		top: 25%;
 		left: calc(50% - 35px);
 		width: 5%;
+		@media (max-width: 786px) {
+			width: 11%;
+		}
 	}
 	.menu {
 		border-bottom: 1px solid black;
 		display: flex;
 		justify-content: space-around;
 		padding-bottom: 20px;
+		@media (max-width: 380px) {
+			flex-direction: column;
+		}
 		li a {
 			background-color: #fff;
 			color: #000;

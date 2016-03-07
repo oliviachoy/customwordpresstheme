@@ -6,6 +6,9 @@
 		max-width: 1200px;
 		margin: 0 auto;
 		display: flex;
+		@media (max-width: 786px) {
+			flex-direction: column;
+		}
 		.whiteSquare {
 			border: 5px ridge #fff;
 			position: relative;
@@ -13,6 +16,13 @@
 			width: 70vh;
 			left: 5%;
 			bottom: -19px;
+			@media (max-width: 786px) {
+				z-index: 299;
+				margin: 0 auto;
+				left: 0;
+				width: inherit;
+				height: 43vh;
+			}
 			.logo {
 				margin-top: 11rem;
 				 h1 {
@@ -20,19 +30,46 @@
 					padding-left: 2rem;
 					letter-spacing: .4rem;
 					width: 80%;
+					@media (max-width: 380px) {
+						font-size: 3.5rem;
+					}
 				}
 				h2 {
 					font-size: 1.8rem;
 					width: 80%;
 					padding-left: 8rem;
 					font-family: $bodyFont;
+					@media (max-width: 380px) {
+						font-size: 1.2rem;
+					}
+				}
+				@media (max-width: 480px) {
+					margin-top: 5rem;
+				}
+				@media (max-width: 380px){
+					margin-top: 8rem;
+				}
+				@media (max-width: 325px) {
+					margin-top: 3rem;
 				}
 			}
 		}
 		.heroImage {
 			height: 60vh;
 			width: 100vh;
+			@media (max-width: 786px) {
+				height: 35vh;
+				position: absolute;
+				top: 67%;
+				width: 100%;
+			}
+			@media (max-width: 480px) {
+				position: static;
+			}
 		}
+	}
+	@media (max-width: 800px) {
+		margin-top: 10rem; 
 	}
 }
 
@@ -41,6 +78,10 @@
 	width: 85%;
 	margin: 0 auto;
 	padding: 10rem 0;
+	@media (max-width: 786px) {
+		margin-top: 12rem;	
+	}
+
 	h2 {
 		font-size: 3rem;
 		color: $purple;
@@ -64,6 +105,9 @@
 	.blogImage img {
 		max-width: 100%;
 		height: 45vh;
+		@media (max-width: 786px) {
+			height: initial;
+		}
 	}
 	.blogInfo {
 		position: absolute;
@@ -87,6 +131,22 @@
 			float: right;
 			font-size: 1.6rem;
 		}
+		 @media (max-width: 1174px) {
+			position: static;
+			height: inherit;
+		 }
+		 @media (max-width: 786px) {
+		 	width: 100%;
+		 }
+
+	}
+	@media (max-width: 786px) {
+		flex-direction: column;
+   		margin: auto;
+    	align-items: center;
+	}
+	@media (max-width: 480px) {
+		padding: 10rem 0;
 	}
 }
 
@@ -95,18 +155,32 @@
 	justify-content: space-between;
 	width: 70%;
 	margin: 0 auto 11rem;
+	@media (max-width: 786px) {
+		flex-direction: column;
+	}
 	.moreInfo {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 		padding: 2rem 0; 
 		width: 28%;
+		@media (max-width: 786px) {
+			flex-direction: column;
+			width: 100%;
+			align-items: center;
+		}
 		h4 {
 			font-size: 2rem;
 			margin: 0;
+			@media (max-width: 786px) {
+				font-size: 1.6rem;
+			}
 		}
 		p {
 			font-size: 1.6rem;
+			@media (max-width: 786px) {
+				font-size: 1rem;
+			}
 		}
 		button {
 			width: 60%;
@@ -134,6 +208,11 @@
 		right: 0; 
 		background-color: rgba(51,51,51,0.5);
 	}
+	@media (max-width: 786px) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .emailbox {
@@ -147,11 +226,18 @@
 		background-color: rgba(255, 255, 255, 0.7);
 		width: 70%;
 		margin: 0 auto;
+		@media (max-width: 786px) {
+			width: 100%;
+		}
+		@media (max-width: 380px) {
+			padding: 2rem 1rem;
+		}
 		p {
 			font-size: 2.3rem;
 			margin: 0;
 			padding: 1rem 0;
 			color:  #fff;
+			text-shadow: 1px 1px 1px grey;
 			text-transform: uppercase;
 			font-family: $titleFont;
 		}
@@ -165,7 +251,10 @@
 		}
 		}
 	}
-
+	@media (max-width: 786px) {
+		width: 90%;
+		margin-bottom: 4rem;
+	}
 }
 
 .submitButton {
@@ -178,5 +267,8 @@
 		font-size: 1.7rem;
 		color: $purple;
 		text-transform: uppercase;
+		@media (max-width: 380px) {
+			padding: 1rem;
+		}
 	}
 }

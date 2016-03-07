@@ -1,12 +1,21 @@
 .blogmain {
 	.container {
 		margin-top: 13rem;
+		@media(max-width: 480px){
+			margin-top: 5rem;
+		}
 		.content {
 			text-align: left;
 			display: flex;
 			padding-top: 5rem;
 			p {
 				width: 90%;
+				@media (max-width: 480px) {
+					width: 100%;
+					display: flex;
+					justify-content: center;
+
+				}
 			}
 			.entry-title {
 				font-size: 4rem;
@@ -16,6 +25,10 @@
 				font-size: 1.8rem;
 				margin: 3rem 0;
 				text-align: center;
+			}
+			@media (max-width: 480px){
+				margin-top: 0;
+				flex-direction: column;
 			}
 		}
 	}
@@ -27,6 +40,9 @@
 
 .sideBar2 {
 	margin-top: 7rem;
+	@media (max-width: 480px) {
+		margin-top: 3rem;
+	}
 }
 
 
