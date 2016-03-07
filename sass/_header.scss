@@ -23,7 +23,7 @@ header {
 		display: flex;
 		justify-content: space-around;
 		padding-bottom: 20px;
-		@media (max-width: 380px) {
+		@media (max-width: 480px) {
 			flex-direction: column;
 		}
 		li a {
