@@ -58,17 +58,17 @@
   <section class="infoSection">
     <div class="moreInfo">
       <h4>More Information</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repellendus, quam, dolore reprehenderit, odit voluptatibus. quam, dolore reprehenderit, odit voluptatibus</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repellendus, quam, dolore reprehenderit, odit voluptatibus. </p>
       <button><a href="#">More Info</a></button>
     </div>
     <div class="moreInfo">
       <h4>More Information</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repellendus, quam, dolore reprehenderit, odit voluptatibus.  quam, dolore reprehenderit, odit voluptatibus</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repellendus, quam, dolore reprehenderit, odit voluptatibus.</p>
       <button><a href="#">More Info</a></button>
     </div>
     <div class="moreInfo">
       <h4>More Information</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repellendus, quam, dolore reprehenderit, odit voluptatibus.  quam, dolore reprehenderit, odit voluptatibus</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repellendus, quam, dolore reprehenderit, odit voluptatibus. </p>
       <button><a href="#blog">More Info</a></button>
     </div>
   </section>
@@ -81,9 +81,9 @@
       <input type="email" placeholder="email address">
        </div>
     </div>
-    <div class="submitButton">
-     <input type="submit" class="submit">
-    </div>
+      <div class="submitButton">
+        <input type="submit" class="submit">
+      </div>
   </section>
 
 

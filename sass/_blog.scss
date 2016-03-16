@@ -1,13 +1,37 @@
 .content2 {
 	display: flex;
-	@media (max-width: 480px){
+	text-align: center;
+	width: 85%;
+	margin: 0 auto;
+	padding: 10rem 0;
+	h2 {
+		font-size: 3rem;
+		color: $purple;
+	}
+	p {
+		line-height: 3.4rem;
+		font-size: 1.5rem;
+		width: 80%;
+		margin: 0 auto;
+		font-family: $bodyFont;
+	}
+	@media(max-width: 768px) {
+		margin-top: 8rem;
+	}
+	@media (max-width: 600px){
 		flex-direction: column;
+		margin-top: 13rem;
+	}
+
+	@media (max-width: 452px) {
+		margin-top: 21rem;
 	}
 }
 
 .blogContent {
 	margin-top: 5rem;
 	text-align: left;
+	width: 90%;
 	h3 {
 		padding: 2rem 0;
 	}
@@ -16,17 +40,31 @@
 		align-items: center;
 		img {
 			width: 30%;
-			@media (max-width: 480px) {
+			@media (max-width: 768px) {
+				width: 70%;
+			}
+			@media (max-width: 600px) {
 				width: 100%;
 			}
 		}
 		p {
+			margin: 0 5rem;
 			width: 60%;
-			@media (max-width: 480px) {
+			@media (max-width: 768px) {
+				width: 80%;
+				margin: 0;
+				padding-top: 4rem;
+			}
+			@media (max-width: 600px) {
 				width: 100%;
 			}
 		}
-		@media (max-width: 480px) {
+		@media (max-width: 768px) {
+			flex-direction: column;
+			align-items: flex-start;
+
+		}
+		@media (max-width: 600px) {
 			display: block;
 		}
 	}
@@ -52,3 +90,7 @@ article {
 			}
 	}	}
 }
+
+// .post {
+// 	width: 90%;
+// }

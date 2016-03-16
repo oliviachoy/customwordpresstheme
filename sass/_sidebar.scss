@@ -3,7 +3,7 @@
 	ul {
 		margin: 0;
 		padding: 0;
-		@media (max-width: 480px){
+		@media (max-width: 600px){
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -31,10 +31,13 @@
 .blogSidebar {
 	margin-top: 6rem;
 	position: fixed;
-	@media(max-width: 786px) {
-		position: static;
+	right: 5rem;
+	@media(max-width: 768px) {
+		margin-top: 0;
+		// right: 3rem;
 	}
-	@media(max-width: 480px) {
+	@media(max-width: 600px) {
+		position: static;
 		margin-top: 4rem;
 	}
 }
